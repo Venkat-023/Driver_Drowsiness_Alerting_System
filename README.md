@@ -56,3 +56,7 @@ In-vehicle driver monitoring systems
 Fleet safety and fatigue management
 
 AI-driven behavioral analysis tools
+
+Future Work:
+Monitoring Facial activity , incase of low Facial activity than a threshold Then Triggering Alarm.
+Monitoring Driver's focus, incase of Driver is distracted Then triggering the Alarm.
