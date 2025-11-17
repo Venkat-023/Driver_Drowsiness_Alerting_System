@@ -10,7 +10,7 @@ Driver Drowsiness Detection is a real-time safety system built using two custom 
 
 🔹 Face State Model Accuracy: 🔥 99.94%
 
-🔹 Eye State Model Accuracy: 🔥 99.71% (without overfitting)
+🔹 Eye State Model Accuracy: 🔥 99.71%
 
 🧠 Researched and curated relevant driver-focused datasets from Kaggle
 
