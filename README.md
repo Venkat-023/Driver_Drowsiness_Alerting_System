@@ -1,62 +1,118 @@
 😴 Driver Drowsiness Detection Using CNN
 High-Accuracy Real-Time Fatigue Monitoring with Deep Learning
 
-Driver Drowsiness Detection is a real-time safety system built using two custom CNN models that monitor a driver's alertness by analyzing eye and face states independently. It uses live video input, intelligent prediction logic, and an alert system to prevent accidents caused by fatigue.
+A real-time Driver Drowsiness Detection System built using custom Convolutional Neural Networks (CNNs) to enhance road safety by monitoring driver alertness.
+The system independently analyzes facial state and eye state using deep learning models and triggers alerts when fatigue is detected.
 
 🚀 Key Highlights
-🔬 Developed and evaluated 15+ custom CNN architectures
 
-📊 Final selected models achieved:
+🔬 Designed, trained, and evaluated 15+ custom CNN architectures
 
-🔹 Face State Model Accuracy: 🔥 99.94%
+📊 Final model performance:
 
-🔹 Eye State Model Accuracy: 🔥 99.71%
+🔹 Face State Model Accuracy: 98.4%
 
-🧠 Researched and curated relevant driver-focused datasets from Kaggle
+🔹 Eye State Model Accuracy: 98.71%
 
-🎥 Real-time processing with OpenCV + Haar Cascades
+🧠 Researched and curated driver-focused datasets from Kaggle
 
-✂️ MediaPipe used during dataset preparation to crop only the driver’s face, removing background noise and irrelevant features
+🎥 Real-time video processing using OpenCV
 
-🧪 Image preprocessing: grayscale conversion, resizing, normalization
+✂️ MediaPipe-based face cropping during dataset preparation to remove background noise
 
-🚨 Smart threshold system triggers alarms and requires user input to confirm alertness
+🚨 Intelligent alert system with user acknowledgment
 
-🔍 How It Works
-Webcam captures real-time video
+⚡ Optimized for real-time inference
 
-Haar Cascades detect the face and eyes
+🧠 System Architecture & Workflow
 
-MediaPipe crops clean facial regions during dataset preparation
+Live video feed captured using webcam
 
-Each region is processed and passed to its respective CNN
+Face & eye detection using Haar Cascades
 
-CNNs classify states (open/closed, alert/drowsy)
+Preprocessed inputs:
 
-Drowsiness is tracked using a threshold counter
+Grayscale conversion
 
-If exceeded, an alarm is raised, and user must respond
+Resizing
+
+Normalization
+
+Independent CNN inference:
+
+Eye State Model → Open / Closed
+
+Face State Model → Alert / Drowsy
+
+Decision logic with temporal smoothing
+
+Threshold-based alert activation
+
+User acknowledgment required to resume monitoring
+
+🧪 Dataset Preparation
+
+📦 Datasets sourced from Kaggle
+
+✂️ MediaPipe Face Detection used to:
+
+Crop only the driver’s face
+
+Remove background clutter
+
+Improve model generalization
+
+🧼 Cleaned, labeled, and balanced datasets for robust training
 
 🧰 Tech Stack
-Python 3.x
 
-TensorFlow / Keras
+Programming Language: Python 3.x
 
-OpenCV
+Deep Learning: TensorFlow, Keras
 
-MediaPipe
+Computer Vision: OpenCV, Haar Cascades
 
-Haar Cascades
+Face Processing: MediaPipe
 
-NumPy, Matplotlib
+Data Handling: NumPy
+
+Visualization: Matplotlib
+
+🚨 Alert Mechanism
+
+Maintains a drowsiness score across frames
+
+Triggers alarm if threshold is exceeded
+
+Requires manual user confirmation to prevent false positives
+
+Ensures continuous and reliable monitoring
 
 💡 Applications
-In-vehicle driver monitoring systems
 
-Fleet safety and fatigue management
+🚗 In-vehicle driver monitoring systems
 
-AI-driven behavioral analysis tools
+🚚 Fleet safety and fatigue management
 
-Future Work:
-Monitoring Facial activity , incase of low Facial activity than a threshold Then Triggering Alarm.
-Monitoring Driver's focus, incase of Driver is distracted Then triggering the Alarm.
+🧠 AI-based behavioral analysis
+
+🛣️ Accident prevention systems
+
+🔮 Future Enhancements
+
+👁️ Facial activity monitoring
+
+Trigger alerts when facial movement falls below a threshold
+
+🎯 Driver attention & distraction detection
+
+Detect gaze diversion and prolonged inattention
+
+🔊 Audio & vibration-based alert systems
+
+📱 Edge deployment for mobile and embedded systems
+
+🏁 Conclusion
+
+This project demonstrates a robust, real-time AI-powered drowsiness detection system combining deep learning and computer vision.
+Its modular design, high accuracy, and intelligent alerting logic make it suitable for real-world safety applications.
